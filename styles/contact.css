@@ -1,0 +1,111 @@
+::selection {
+    color: #ff91af;
+    background: #ffe9ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #ffe9ef;
+    margin: 0;
+    padding: 16px;
+}
+
+main {
+    border-radius: 15px;
+    background-color: #ff91af;
+    padding: 16px;
+    text-align: center;
+    min-height: 42rem;
+}
+
+h2 {
+    color: #ffe9ef;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    font-size: 2rem;
+}
+
+.rollcake {
+    width: 50px;
+}
+
+.contact-container {
+    color: #ffe9ef;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    margin: 0;
+}
+
+.contact-form {
+    margin: auto;
+    padding-top: 16px;
+    width: 55%;
+}
+
+span {
+    color: crimson;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+}
+
+fieldset {
+    border: 3px solid #ffd3df;
+    border-radius: 15px;
+    margin: 16px;
+}
+
+legend {
+    font-size: 1rem;
+    font-family: 'pixel bold', bebas neue, verdana, tahoma, geneva;;
+    display: block;
+}
+
+input {
+    border: 3px solid #ff91af;
+    border-radius: 10px;
+    color: #ff91af;
+    font-family: pixel;
+    font-size: 0.9rem;
+    margin: 4px 0 8px;
+    outline: none;
+    padding: 4px;
+    width: 30%;
+}
+
+textarea {
+    border: 3px solid #ff91af;
+    border-radius: 10px;
+    color: #ff91af;
+    field-sizing: content;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    font-size: 0.9rem;
+    resize: vertical;
+    width: 100%;
+}
+
+button {
+    background-color: #ff91af;
+    border: 3px solid #ffe9ef;
+    border-radius: 10px;
+    color: #ffe9ef;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        min-height: 52rem;
+    }
+    
+    .title { 
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }  
+}

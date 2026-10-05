@@ -1,0 +1,14 @@
+@font-face {
+    font-family: pixel;
+    src: url(../fonts/silkscreen/Silkscreen-Regular.woff2);
+}
+
+@font-face {
+    font-family: pixel bold;
+    src: url(../fonts/silkscreen/Silkscreen-Bold.woff2);
+}
+
+@font-face {
+    font-family: bebas neue;
+    src: url(../fonts/BebasNeue-Regular.woff2);
+}

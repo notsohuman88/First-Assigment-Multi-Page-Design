@@ -1,0 +1,147 @@
+::selection {
+    color: #ff91af;
+    background: #ffe9ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #ffe9ef;
+    margin: 0;
+    padding: 16px;
+}
+
+main {
+    border-radius: 15px;
+    background-color: #ff91af;
+    height: 40em;
+    padding: 16px;
+}
+
+section {
+    align-content: center;
+    display: block;
+    padding: 16px;
+}
+
+.fact-boxes {
+    display: grid;
+    gap: 16px;
+    grid-template: repeat(3, 180px) / repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f2"
+                         "f1 f3 f4"
+                         "f5 f5 f4";
+    margin: 0;
+}
+
+.fact {
+    background-color: #ffb2c7;
+    display: grid;
+    padding: 32px;
+    place-items: center;
+    text-align: center;
+    transition: linear 0.3s;
+
+    &:hover {
+     background-color: #ff91af;
+     transform: scale(1.03);
+     z-index: 10;
+    }
+}
+
+.fact h2 {
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.fact:hover h2 {
+    opacity: 0;
+}
+
+h2 {
+    color: #ffe9ef;
+    margin: auto;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    font-size: 2rem;
+}
+
+.fact h2,
+.fact-text {
+    grid-area: 1 / 1;
+    margin: 0;
+}
+
+.fact-text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fact:hover .fact-text {
+    opacity: 1;
+}
+
+.fact-text {
+    color: #ffe9ef;
+    font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
+    font-size: 1rem;
+}
+
+
+.fact1 {
+    border-top-left-radius: 15px;
+    grid-area: f1;
+}
+
+.cake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.fact2 {
+    border-top-right-radius: 15px;
+    grid-area: f2;
+}
+
+.fact3 {
+    grid-area: f3;
+}
+
+.fact4 {
+    border-bottom-right-radius: 15px;
+    grid-area: f4;
+}
+
+.fact5 {
+    border-bottom-left-radius: 15px;
+    grid-area: f5;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 52em;
+        justify-content: center;
+    }
+
+    .fact {
+        padding: 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .fact-text {
+        font-size: 0.7rem;
+    }
+}
