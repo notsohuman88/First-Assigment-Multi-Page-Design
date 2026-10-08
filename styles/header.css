@@ -20,5 +20,6 @@
 
     &:hover {
         color: white;
+        cursor: crosshair;
     }
 }
