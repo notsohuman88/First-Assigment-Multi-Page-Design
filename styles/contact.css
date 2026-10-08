@@ -94,6 +94,13 @@ button {
     color: #ffe9ef;
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 0.9rem;
+    transition: linear 0.3s;
+
+    &:hover {
+        background-color: #ffe9ef;
+        color: #ff91af;
+        cursor: crosshair;
+    }
 }
 
 @media screen and (max-width: 768px) {
