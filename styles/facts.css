@@ -49,9 +49,9 @@ section {
     transition: linear 0.3s;
 
     &:hover {
-     background-color: #ff91af;
-     transform: scale(1.03);
-     z-index: 10;
+        background-color: #ff91af;
+        transform: scale(1.02);
+        z-index: 10;
     }
 }
 
