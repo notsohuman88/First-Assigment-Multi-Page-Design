@@ -107,19 +107,15 @@ h2 {
     grid-area: f1;
 }
 
-.cake {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 .fact2 {
     border-top-right-radius: 15px;
     grid-area: f2;
 }
 
 .fact3 {
+    background-image: url(../images/furamingo.jpg);
+    background-size: cover;
+    background-position: center;
     grid-area: f3;
 }
 
@@ -174,6 +170,8 @@ h2 {
 
     .fact3 {
     grid-area: f3;
+    background-image: url(../images/furamingo2.jpg);
+    background-size: cover;
     }
 
     .fact4 {
