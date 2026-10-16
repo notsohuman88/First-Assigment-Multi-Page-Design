@@ -39,7 +39,7 @@ h2 {
 }
 
 .rollcake {
-    width: 50px;
+    width: 2%;
 }
 
 .contact-container {
@@ -117,6 +117,10 @@ button {
     
     .title { 
         font-size: 3rem;
+    }
+
+    .rollcake {
+    width: 10%;
     }
 
     .contact-form {
