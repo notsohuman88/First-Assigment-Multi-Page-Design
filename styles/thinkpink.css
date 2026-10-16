@@ -80,4 +80,8 @@ span {
     height: 50em;
     width: 95%;
     }
+
+    .article {
+        font-size: 5vw;
+    }
 }

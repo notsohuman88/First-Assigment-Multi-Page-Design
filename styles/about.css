@@ -56,11 +56,25 @@ main {
     margin: 0;
 }
 
+.article:before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(transparent 150px, var(--bakermiller-pink));
+    height: 83%;
+    left: 30px;
+    top: 0;
+    right: 30px;
+}
+
 .strawberry {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+}
+
+footer {
+    z-index: 20;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,5 +85,14 @@ main {
     .article-container {
     height: 50em;
     width: 95%;
+    }
+
+    .article {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    .article:before {
+        content: none;
     }
 }
