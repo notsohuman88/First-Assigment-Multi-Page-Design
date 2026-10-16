@@ -1,7 +1,12 @@
+:root {
+    --bakermiller-pink: #ff91af;
+    --lavender-blush: #ffe9ef;
+}
+
 .header {
     align-items: center;
-    background-color: #ffe9ef;
-    color: #ff91af;
+    background-color: var(--lavender-blush);
+    color: var(--bakermiller-pink);
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -14,7 +19,7 @@
 }
 
 .page-title {
-    color: #ff91af;
+    color: var(--bakermiller-pink);
     font-family: 'pixel bold', Verdana, Geneva, Tahoma, sans-serif;
     transition: all linear 0.5s;
 

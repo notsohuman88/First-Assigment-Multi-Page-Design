@@ -1,5 +1,9 @@
+:root {
+    --bakermiller-pink: #ff91af;
+}
+
 .footer {
-    color: #ff91af;
+    color: var(--bakermiller-pink);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 0.8rem;
     text-align: center;

@@ -1,6 +1,11 @@
+:root {
+    --bakermiller-pink: #ff91af;
+    --lavender-blush: #ffe9ef;
+}
+
 ::selection {
-    color: #ff91af;
-    background: #ffe9ef;
+    color: var(--bakermiller-pink);
+    background: var(--lavender-blush);
 }
 
 * {
@@ -12,14 +17,14 @@ html {
 }
 
 body {
-    background-color: #ffe9ef;
+    background-color: var(--lavender-blush);
     margin: 0;
     padding: 16px;
 }
 
 main {
     border-radius: 15px;
-    background-color: #ff91af;
+    background-color: var(--bakermiller-pink);
     padding: 16px;
 }
 
@@ -29,20 +34,20 @@ main {
     width: 95%;
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-color: #ffe9ef #ff91af;
+    scrollbar-color: var(--lavender-blush) var(--bakermiller-pink);
     text-align: center;
 
 }
 
 .article-title {
-    color: #ffe9ef;
+    color: var(--lavender-blush);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 12dvw;
     margin-bottom: 0;
 }
 
 .article {
-    color: #ffe9ef;
+    color: var(--lavender-blush);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 3vw;
     margin: 0;

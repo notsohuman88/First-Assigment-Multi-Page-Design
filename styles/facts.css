@@ -1,6 +1,13 @@
+:root {
+    --bakermiller-pink: #ff91af;
+    --cherry-blossom: #ffb2c7;
+    --lavender-blush: #ffe9ef;
+
+}
+
 ::selection {
-    color: #ff91af;
-    background: #ffe9ef;
+    color: var(--bakermiller-pink);
+    background: var(--lavender-blush);
 }
 
 * {
@@ -12,14 +19,14 @@ html {
 }
 
 body {
-    background-color: #ffe9ef;
+    background-color: var(--lavender-blush);
     margin: 0;
     padding: 16px;
 }
 
 main {
     border-radius: 15px;
-    background-color: #ff91af;
+    background-color: var(--bakermiller-pink);
     height: 40em;
     padding: 16px;
 }
@@ -41,7 +48,7 @@ section {
 }
 
 .fact {
-    background-color: #ffb2c7;
+    background-color: var(--cherry-blossom);
     display: grid;
     padding: 32px;
     place-items: center;
@@ -49,7 +56,7 @@ section {
     transition: linear 0.3s;
 
     &:hover {
-        background-color: #ff91af;
+        background-color: var(--bakermiller-pink);
         transform: scale(1.02);
         z-index: 10;
     }
@@ -66,7 +73,7 @@ section {
 }
 
 h2 {
-    color: #ffe9ef;
+    color:  var(--lavender-blush);
     margin: auto;
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 2rem;
@@ -88,7 +95,7 @@ h2 {
 }
 
 .fact-text {
-    color: #ffe9ef;
+    color:  var(--lavender-blush);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 1rem;
 }

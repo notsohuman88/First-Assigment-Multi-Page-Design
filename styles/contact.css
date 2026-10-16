@@ -1,6 +1,12 @@
+:root {
+    --bakermiller-pink: #ff91af;
+    --petal-frost: #ffd3df;
+    --lavender-blush: #ffe9ef;
+}
+
 ::selection {
-    color: #ff91af;
-    background: #ffe9ef;
+    color: var(--bakermiller-pink);
+    background: var(--lavender-blush);
 }
 
 * {
@@ -12,21 +18,21 @@ html {
 }
 
 body {
-    background-color: #ffe9ef;
+    background-color: var(--lavender-blush);
     margin: 0;
     padding: 16px;
 }
 
 main {
     border-radius: 15px;
-    background-color: #ff91af;
+    background-color: var(--bakermiller-pink);
     padding: 16px;
     text-align: center;
     min-height: 42rem;
 }
 
 h2 {
-    color: #ffe9ef;
+    color: var(--lavender-blush);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 2rem;
 }
@@ -36,7 +42,7 @@ h2 {
 }
 
 .contact-container {
-    color: #ffe9ef;
+    color: var(--lavender-blush);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     margin: 0;
 }
@@ -53,7 +59,7 @@ span {
 }
 
 fieldset {
-    border: 3px solid #ffd3df;
+    border: 3px solid var(--petal-frost);
     border-radius: 15px;
     margin: 16px;
 }
@@ -65,9 +71,9 @@ legend {
 }
 
 input {
-    border: 3px solid #ff91af;
+    border: 3px solid var(--bakermiller-pink);
     border-radius: 10px;
-    color: #ff91af;
+    color: var(--bakermiller-pink);
     font-family: pixel;
     font-size: 0.9rem;
     margin: 4px 0 8px;
@@ -77,9 +83,9 @@ input {
 }
 
 textarea {
-    border: 3px solid #ff91af;
+    border: 3px solid var(--bakermiller-pink);
     border-radius: 10px;
-    color: #ff91af;
+    color: var(--bakermiller-pink);
     field-sizing: content;
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 0.9rem;
@@ -88,17 +94,17 @@ textarea {
 }
 
 button {
-    background-color: #ff91af;
-    border: 3px solid #ffe9ef;
+    background-color: var(--bakermiller-pink);
+    border: 3px solid var(--lavender-blush);
     border-radius: 10px;
-    color: #ffe9ef;
+    color: var(--petal-frost);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 0.9rem;
     transition: linear 0.3s;
 
     &:hover {
-        background-color: #ffe9ef;
-        color: #ff91af;
+        background-color: var(--petal-frost);
+        color: var(--bakermiller-pink);
         cursor: crosshair;
     }
 }
