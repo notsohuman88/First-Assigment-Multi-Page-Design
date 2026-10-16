@@ -134,6 +134,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+    z-index: 20;
+    }
+    
     main {
         display: flex;
         flex-direction: column;
@@ -141,6 +145,47 @@ h2 {
         justify-content: center;
     }
 
+    .fact-boxes {
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(3, 240px) / repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f2"
+                         "f1 f3 f4"
+                         "f5 f5 f4";
+    margin: 0;
+    }
+
+    .fact1 {
+    border-top-left-radius: 15px;
+    grid-area: f1;
+    }
+
+    .cake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+
+    .fact2 {
+    border-top-right-radius: 15px;
+    grid-area: f2;
+    }
+
+    .fact3 {
+    grid-area: f3;
+    }
+
+    .fact4 {
+    border-bottom-right-radius: 15px;
+    grid-area: f4;
+    }
+
+    .fact5 {
+    border-bottom-left-radius: 15px;
+    grid-area: f5;
+    }
+    
     .fact {
         padding: 0;
     }
@@ -150,6 +195,6 @@ h2 {
     }
 
     .fact-text {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 }
