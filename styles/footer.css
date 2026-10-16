@@ -1,9 +1,19 @@
 :root {
     --bakermiller-pink: #ff91af;
+    --hover-color: #ffffff;
+}
+
+.footer-content {
+    color: var(--bakermiller-pink);
+    text-decoration: none;
+    transition: linear 0.3s;
+
+    &:hover {
+        color: var(--hover-color);
+    }
 }
 
 .footer {
-    color: var(--bakermiller-pink);
     font-family: 'pixel', bebas neue, verdana, tahoma, geneva;
     font-size: 0.8rem;
     text-align: center;
