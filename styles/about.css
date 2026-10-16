@@ -35,9 +35,11 @@ main {
     width: 95%;
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-color: var(--lavender-blush) var(--bakermiller-pink);
     text-align: center;
+}
 
+.article-container::-webkit-scrollbar {
+    display: none;
 }
 
 .article-title {
